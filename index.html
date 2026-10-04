@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>birthday</title><!--タイトルを付けます-->
+<meta name="description" content="かずき誕生日おめでとう"><!--簡単な説明用テキストを設定します-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no,address=no">
+<!--css 見た目を設定します-->
+<link rel="stylesheet" href="./css/common.css"><!--基本的な設定です※触る必要なし-->
+<link rel="stylesheet" href="./css/index.css"><!--こちらを触って設定します-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<body id="top" class="ro">
+<!--ここから中身-->
+<!--top-->
+	<section class="page active" id="page1">
+		<div class="hero">
+			<div class="heroInner">
+				<p class="pageResevLogo fMerri">BIRTHDAY TRAVEL</p>
+				<div class="page01">
+				<p class="logoSub fMerri">special trip<br>for you</p>
+				
+				<p class="textHero fShipp">特別な旅を<br>お楽しみください</p>
+				
+				<button onClick="nextPage(2)">
+					Resevrvation here →
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!--page2-->
+	<section class="page" id="page2">
+		<div class="pageResev">
+			<div class="pageResevInner">
+				<p class="pageResevLogo02 fMerri">BIRTHDAY TRAVEL</p>
+				<button class="back02" onclick="nextPage(1)">
+					← BACK
+				</button>
+				<div class="pageResevconfirmed fMerri">
+                  Resevation
+				</div>
+			
+				
+				<div class="pageResevBox">
+					<table>
+						<tr>
+							<th>TRIP INFORMATION<br><br></th>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th>GUEST</th>
+							<td>高島 一貴 様</td>
+						</th>
+						
+						<tr>
+							<th>PARTNER</th>
+							<td>岸澤 侑子 様</td>
+						
+						<tr>
+							<th>DATE</th>
+							<td >2026.10.7 - 8</td>
+							
+						</tr>
+						
+						<tr>
+							<th>HOTEL</th>
+							<td> 🔒 SECRET</td>
+							
+						</tr>
+					</table>
+				
+			<button class="buttonPage2" onClick="nextPage(3)">
+			    tap →
+			</button>
+				
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!--page3-->
+	
+  <section class="page" id="page3">
+
+    <div class="passwordBox">
+		<div class="passwordBoxInner">
+			
+	<div class="passwordBoxMain">
+		
+
+      <p class="small-title fMerri">
+        DESTINATION
+      </p>
+
+      <h2>
+        PASSWORD REQUIRED
+      </h2>
+
+      <span>
+        この先を見るには、<br>
+        パスワードが必要です。
+      </span>
+
+      <div class="hint fMerri">
+        ヒント：私たちの思い出の数字
+      </div>
+
+      <input
+        id="password"
+        type="password"
+        placeholder="パスワードを入力"
+      >
+
+      <button class="button03" onclick="checkPassword()">
+        UNLOCK
+      </button>
+
+      <p id="error"></p>
+
+    </div>
+	</div>
+	</div>
+
+  </section>
+
+<!--page6-->
+	
+	  <section class="page countdown-page" id="page6">
+	<div class="pageCountdown">
+
+    <p>
+      しばらくお待ちください
+    </p>
+
+    <div id="countdown">
+      3
+    </div>
+		</div>
+
+  </section>
+	
+<!--page7-->
+  <section class="page" id="page7">
+
+    <div class="hotel">
+
+      <div class="hotelInner">
+		  
+		<div class="hotelName">
+			<p class="pageResevLogo">BIRTHDAY TRAVEL</p>
+
+        <h1>
+          仙台・作並温泉<br>
+          ゆづくしsalon
+        </h1>
+
+        <p>
+          自然に包まれる、癒しのひととき。
+        </p>
+		 </div>
+		
+		<div class="pageDate7">
+
+        <div class="hotelDate">
+			
+            <h4>CHECK-IN</h4>
+            <strong>2026.10.7</strong>
+
+            <h4>CHECK-OUT</h4>
+            <strong>2026.10.8</strong>
+          </div>
+
+        <div class="room">
+          <h4>ROOM<h4>
+          <strong>里山 Seyryu 露天風呂付客室</strong>
+        </div>
+			
+		
+		<div class="review fSerif">
+			<h4>口コミ</h4>
+			
+			    <strong>翔平</strong>
+
+          <span class="stars">
+            ★★★★★
+          </span>
+
+        </div>
+
+        <p>
+		28ちゃいおめでとう、身長は伸びましたか？
+        </p>
+
+        <div class="review-bottom">
+          ♡ いいね！ (1004)
+        </div>
+			  
+	
+		<div class="review">
+		
+		<strong>mai</strong>
+
+          <span class="stars">
+            ★★★★★
+          </span>
+			
+			  </div>
+
+ 
+
+        <p>
+		誕生日おめとー！<br>
+		Around thirty<br>
+		もうこちら側の人間です。
+        </p>
+
+        <div class="review-bottom">
+          ♡ いいね！ (1004)
+        </div>
+			
+				<div class="review">
+		
+		<strong>トリ</strong>
+
+          <span class="stars">
+            ★★★★★
+          </span>
+			
+			  </div>
+
+ 
+
+        <p>
+		誕生日おめでとう！<br>またキャンプもいこうぜ！
+        </p>
+
+        <div class="review-bottom">
+          ♡ いいね！ (1004)
+        </div>
+		
+				<div class="review">
+		
+		<strong>YURA</strong>
+
+          <span class="stars">
+            ★★★★★
+          </span>
+			
+			  </div>
+
+ 
+
+        <p>
+		お誕生日おめでとうございます！<br>
+		またみんなで花火とかBBQとか、遊んでください〜！笑
+        </p>
+
+        <div class="review-bottom">
+          ♡ いいね！ (1004)
+        </div>
+		
+				<div class="review">
+		
+		<strong>まりん</strong>
+
+          <span class="stars">
+            ★★★★★
+          </span>
+			
+			  </div>
+
+ 
+
+        <p>
+		かずきちおめでとう！<br>
+		またみんなでキャンプもスノボも行こうね〜
+        </p>
+
+        <div class="review-bottom">
+          ♡ いいね！ (12)
+        </div>
+			  
+		<button class="button7" onClick="nextPage(8)">
+		 Here →
+	</button>
+		
+	  </div>
+			
+		  
+	</div>
+		
+
+			
+
+    </div>
+
+  </section>
+	
+<!--page8-->
+  <section class="page final-page" id="page8">
+
+    <div class="pageFinel">
+	
+		
+		<strong>
+			RESERVTION CONFIRMED
+		</strong>
+		
+		<h1>ご予約が確定しました</h1>
+	
+
+      <p class="english fItali">
+        This isn't just a hotel reservation.<br>
+
+        It's a reservation for one more
+        memory with you.
+      </p>
+
+      <h1>
+		Happy Birthday!<br><br>
+        今年も一緒に<br>
+        お祝いできて嬉しい！楽しもうね
+      </h1>
+
+      <p class="signature">
+        Yukiko 
+      </p>
+
+    </div>
+
+  </section>
+	
+	
+	
+						
+						
+						
+					
+				
+
+
+
+
+<!--ここまで中身-->
+<!--js 動きを調整します※触る必要なし-->    
+<script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*==============================
+    基本設定
+==============================*/
+body{
+    font-size:12px;
+    font-family:'Shippori Mincho B1', sans-serif;
+    margin:0;
+    padding:0;
+    text-align:left;
+    -webkit-text-size-adjust:100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.25);
+    position:relative;
+    word-break:break-all;
+    min-width:1400px;
+	background: #111;
+    color: #fff;
+    letter-spacing: 0.04em;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width:767px){
+    body{
+        min-width:0;
+    }
+}
+
+body *, body *::before, body *::after{box-sizing:border-box;}
+img{vertical-align:bottom;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+th{
+    font-weight:normal;
+    text-align:left;
+}
+
+/*font layout*/
+.fBold{font-weight:bold;}
+.fSerif{font-family:'Noto Serif Japanese', serif;}
+.fMerri{font-family: "Merriweather", serif;}
+.fShipp{font-family: "Shippori Mincho B1", serif;}
+.fItali{font-family: "Italianno", cursive;}
+
+/*rollover*/
+.ro a:hover,
+a.ro:hover,
+a .ro:hover,
+.cursorPointer:hover{ opacity:0.8; }
+.ro a,
+a.ro,
+a .ro,
+.cursorPointer{
+    transition:opacity 0.2s ease-out;
+}
+.cursorPointer{cursor:pointer;}
+@media only screen and (max-width:767px){
+    .ro a:hover,
+    a.ro:hover,
+    a .ro:hover,
+    .cursorPointer:hover{ opacity:1; }
+}
+
+/*rollover(brightnessによる変化)*/
+.brt a:hover,a.brt:hover,a .brt:hover{ -webkit-filter: brightness(1.1);filter: brightness(1.1); }
+.brt a,
+a.brt,
+a .brt{
+    transition:filter 0.2s ease-out;
+}
+@media only screen and (max-width:767px){
+    .brt a:hover,a.brt:hover,a .brt:hover{ filter:none; }
+}
+
+/*ro無効化*/
+.ro .no_ro a:hover,
+.ro a.no_ro:hover,
+.ro .no_ro .cursorPointer:hover,
+.ro .cursorPointer.no_ro:hover{ opacity:1; }
+
+/* 電話リンクの無効化 */
+a[href^="tel:"]{
+    pointer-events:none;
+    cursor:default;
+}
+@media only screen and (max-width:767px){
+    a[href^="tel:"]{
+        pointer-events:auto;
+        cursor:pointer;
+    }
+}
+
+/* container */
+#container{
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*========================================
+    レスポンシブ用(不要な場合は削除)
+========================================*/
+.spOnly,
+.brSp,
+.imgSp{
+    display:none;
+}
+.img100{
+    width:100%;
+    height:auto;
+}
+@media only screen and (max-width:767px){
+    .spNone,
+    .brPc,
+    .imgPc{
+        display:none;
+    }
+    .spOnly{
+        display:block;
+    }
+    .brSp,
+    .imgSp{
+        display:inline;
+    }
+    .imgR{
+        width:100%;
+        height:auto;
+    }
+}
+
+/*-----------------------------------------------
+    imgCover
+-----------------------------------------------*/
+/* imgCover */
+.imgCover,
+.imgCont{
+    position:relative;
+}
+.imgCover img {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+    font-family:'object-fit:cover;';
+}
+.imgCont img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}

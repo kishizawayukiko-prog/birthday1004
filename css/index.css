@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* =====================
+   ページ切り替え
+===================== */
+
+.page {
+
+  display: none;
+
+}
+
+.page.active {
+	display: block;
+    animation: pageFadeIn 1s ease;
+}
+
+@keyframes pageFadeIn {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  border: 1px solid rgba(255,255,255,0.7);
+  background: transparent;
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:     
+	background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+button:hover {
+  background: white;
+  color: #222;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*===========
+sp
+===========*/
+@media screen and (max-width: 767px) {
+	
+	.pageResevLogo{
+		font-size: 15px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	
+	.back{
+		margin: 0 20px;
+		padding: 5px 20px;
+	}
+	
+/*page1*/
+	
+.heroInner{
+	background-image: url("../img/index/img02.png");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	
+}
+	
+.page01{
+	margin-top:300px;
+		
+	}
+	
+.logoSub{
+	font-size: 40px;
+	line-height: 1.5;
+	padding-left:20px;
+	}
+	
+.textHero{
+	padding:20px 20px;
+	font-size: 15px;
+	line-height: 2.0;
+	}
+	
+.heroInner button{
+	margin: 0 20px;
+	}
+	
+	
+	
+/*page2*/
+
+#page2{
+	background:url("../img/index/img2.png");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	height: 100vh;
+	}
+	
+.pageResevLogo02{
+	padding: 20px;
+	font-size:15px;
+	margin: 0;
+	color: #fff;
+	}
+	
+.back02{
+	margin: 5px 20px;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	}
+	
+.pageResevInner h2{
+	padding-left: 20px;
+	font-size:30px;	
+	}
+	
+.pageResevconfirmed{
+	margin-top: 20px;
+	text-align: center;
+	font-size:35px;
+	color: #fff;
+		
+	}
+	
+.pageResevBox table{
+	background-color:rgba(255, 255, 255, 0.8);
+	box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+	padding: 20px 30px;
+	text-align: center;
+	margin:20px auto ;
+	font-size: 20px;
+	padding-bottom:50px;
+	}
+
+	
+.pageResevBox th,
+	.pageResevBox td {
+	padding: 20px 0 ;
+	border-bottom: 1px solid #ccc;
+
+	}
+	
+	.pageResevBox th{
+	font-size:12px;
+		
+	}
+	
+.pageResevBox td{
+	letter-spacing: 2px;
+	}
+	
+	
+.buttonPage2{
+	font-size: 15px;
+	padding-left: 20px;
+	margin-left: 40%;
+	margin-top: 20px;
+	border: 1px solid #fff;
+	
+	}
+	
+/*page03*/
+	
+.passwordBoxInner{
+	background: url("../img/index/img03.png");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+    align-items: center;
+	}
+	
+	.small-title{
+		font-size: 30px;
+		letter-spacing: 2px;
+		
+	}
+	
+	.passwordBoxMain{
+		padding-left: 30px;
+	}
+	
+	.passwordBoxMain span{
+		font-size:15px;
+		line-height: 2.0;
+	}
+	
+	.hint{
+		font-size:15px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	
+	#password{
+		padding: 10px;
+		font-size: 16px;
+	}
+	
+	.button03{
+		margin-left: 10px;
+	}
+
+	/*page6*/
+	
+	.pageCountdown{
+		background-image: url("../img/index/img4.png");
+		background-size: cover;
+	    background-position: center;
+	    height: 100vh;
+	    text-align: center;
+	    margin:0 auto ;
+		
+		
+	}
+	
+	.pageCountdown P{
+		font-size: 25px;
+		align-items: center;
+		padding-top: 100px;
+	}
+	
+	#countdown{
+		font-size: 50px;
+		padding-top: 50px;
+	}
+	
+	/*page7*/
+	
+	.hotelName{
+		background-image: url("../img/index/img07.png");
+		background-size: cover;
+	    background-position: center;
+		padding-bottom: 50px;
+	}
+	
+	.hotelName h1{
+		font-size:30px;
+		margin-top: 50px;
+		padding-left: 20px;
+		
+	}
+	
+	.hotelName p{
+		font-size: 15px;
+		padding-left: 20px;
+	}
+	
+	.pageDate7{
+		background-color: #fff;
+		color: #000;
+		height: auto;
+		padding-left: 20px;
+	}
+	
+	.hotelDate,
+	.room{
+		border-bottom: 1px solid #B9B9B9;
+		padding:20px 0;
+		
+	}
+	
+	.button7{
+		color: #000;
+	}
+	
+	.hotelDate h4,
+	.room h4,
+	.review h4{
+		color: #B9B9B9;
+		font-size: 15px;
+	}
+	
+	.hotelDate strong,
+	.room strong{
+		font-size: 15px;
+		color: #000;
+	}
+	
+	.review-bottom{
+		margin-bottom: 20px;
+	}
+	
+	.review strong{
+		margin-right: 10px;
+	}
+	
+	.button7{
+		border: 1px solid #000;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	
+	/*page8*/
+	.pageFinel{
+		background-image: url("../img/index/img08.png");
+		background-size: cover;
+	    background-position: center;
+		height: 100vh;
+		text-align: center;
+		padding-top: 150px;
+		
+		
+	}
+	
+	.pageFinel strong{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	
+	.pageFinel h1{
+		font-size: 20px;
+	}
+	
+	.english{
+		font-size: 25px;
+		margin-bottom: 60px;
+	}
+	
+	.signature{
+		font-size: 15px;
+	}
+	
+	
+	
+	
+	
+	
+	
